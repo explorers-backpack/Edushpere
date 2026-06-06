@@ -49,6 +49,21 @@ logs/
 htmlcov/
 .pytest_cache/
 
+# Secrets / API Keys
+*.key
+*_key*
+api_key*
+apikey*
+.apikey
+credentials*
+secrets*
+*.p8
+*.pem
+*.crt
+*.cer
+service_account*.json
+*.sac.json
+
 # Misc
 *.bak
 *.tmp
