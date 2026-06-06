@@ -36,10 +36,20 @@ class Settings(BaseSettings):
     ALGORITHM: str = "HS256"
     ACCESS_TOKEN_EXPIRE_MINUTES: int = 1440  # 24 hours
 
-    # DeepSeek API
+    # LLM Provider: "deepseek" or "spark"
+    LLM_PROVIDER: str = "spark"
+
+    # DeepSeek API (备选)
     DEEPSEEK_API_KEY: str = ""
     DEEPSEEK_BASE_URL: str = "https://api.deepseek.com"
     DEEPSEEK_MODEL: str = "deepseek-chat"
+
+    # 讯飞星火 API (主用)
+    SPARK_APP_ID: str = ""
+    SPARK_API_KEY: str = ""
+    SPARK_API_SECRET: str = ""
+    SPARK_VERSION: str = "v3.5"  # v1.5 / v2.0 / v3.0 / v3.5
+    SPARK_DOMAIN: str = "generalv3.5"  # 对应版本的核心能力域名
 
     # CORS
     CORS_ORIGINS: str = "http://localhost:5173,http://localhost:3000"

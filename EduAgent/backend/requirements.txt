@@ -25,6 +25,9 @@ langgraph>=0.0.20
 langchain>=0.1.0
 langchain-deepseek>=0.1.0
 
+# WebSocket (for 讯飞星火)
+websockets>=12.0
+
 # HTTP Client
 httpx>=0.25.0
 
