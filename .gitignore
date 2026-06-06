@@ -43,6 +43,12 @@ logs/
 # Docker
 *.pid
 *.seed
+docker-data/
+.docker/
+
+# Claude Code
+.claude/
+*.claude*
 
 # Testing
 .coverage
